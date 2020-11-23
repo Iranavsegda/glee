@@ -1,0 +1,30 @@
+$accent-color: #465e6b;
+$default-color:#585858;
+$title-color: #243f4d;
+$link-color: #436372;
+$main-color: #fcd7b6;
+
+%dmsans-400{
+	font-family: 'DMSans-Regular', sans-serif;
+	font-weight: 400;
+}
+
+%dmsans-700{
+	font-family: 'DMSans-Bold', sans-serif;
+	font-weight: 700;
+}
+
+%rubik-400{
+	font-family: 'Rubik-Regular', sans-serif;
+	font-weight: 400;
+}
+
+%rubik-500{
+	font-family: 'Rubik-Medium', sans-serif;
+	font-weight: 500;
+}
+
+%rubik-600{
+	font-family: 'Rubik-SemiBold', sans-serif;
+	font-weight: 600;
+}
