@@ -1,6 +1,7 @@
 html,
 body {
 	height: 100%;
+	overflow-x: hidden;
 }
 
 body {
@@ -10,7 +11,7 @@ body {
 	font-size: 16px;
 	line-height: 30px;
 	color: $default-color;
-	@extend %dmsans-700;
+	@extend %rubik-400;
 }
 
 .main {

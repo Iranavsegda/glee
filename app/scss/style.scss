@@ -1,6 +1,7 @@
 @import 'vars';
 @import 'fonts';
 @import 'reset';
+@import 'libs';
 @import 'global';
 
 
@@ -172,7 +173,6 @@
 
 	&__link {
 		color: #7b7b7b;
-
 	}
 
 	&__text {
@@ -198,11 +198,10 @@
 	}
 
 	&__form-btn {
+		@extend %btn;
 		border: none;
-		background-color: #a3bbc8;
-		color: #ffffff;
 		padding: 15px;
-		font-size: 16px;
+		cursor: pointer;
 	}
 }
 
@@ -229,6 +228,92 @@
 	&__list-link {
 		color: #7b7b7b;
 
+	}
+}
+
+.top-slider {
+	background-image: url(../images/slider/bgSlider.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	padding-top: 215px;
+
+	&__content {
+		padding-bottom: 25px;
+	}
+
+	&__title {
+		max-width: 470px;
+		@extend %rubik-500;
+		font-size: 72px;
+		line-height: 75px;
+		color: $title-color;
+		margin-bottom: 45px;
+	}
+
+	&__text {
+		font-size: 18px;
+		color: $link-color;
+		max-width: 365px;
+		margin-bottom: 45px;
+	}
+
+	&__link {
+		@extend %btn;
+		position: relative;
+	}
+
+	&__link::after {
+		content: '';
+		background-image: url(../images/arrowbtn.svg);
+		background-repeat: no-repeat;
+		position: absolute;
+		width: 25px;
+		height: 15px;
+		top: 45%;
+		right: 25px;
+	}
+
+	&__img {
+		max-height: 260px;
+	}
+
+	&__wrapper {
+		display: flex;
+		justify-content: space-between;
+		align-items: end;
+		padding: 0 300px;
+	}
+
+	.slick-dots {
+		display: flex;
+		justify-content: center;
+		margin-top: 200px;
+		padding-bottom: 45px;
+
+		li {
+			margin-left: 11px;
+			button {
+				padding: 0;
+				background-color: #fde3cc;
+				font-size: 10px;
+				color: $title-color;
+				height: 30px;
+				width: 30px;
+				border: none;
+				border-radius: 50%;
+				outline: transparent;
+			}
+
+			&.slick-active {
+				button {
+					background-color: #fff;
+				}
+			}
+			
+		}
+		li:first-child {
+			margin-left: 0;
+		}
 	}
 }
 
