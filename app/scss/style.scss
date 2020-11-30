@@ -6,7 +6,7 @@
 
 
 .header {
-	padding-top: 20px;
+	padding-top: 45px;
 	margin-bottom: 50px;
 
 	&__inner {
@@ -36,16 +36,17 @@
 	&__link {
 		color: $link-color;
 		padding-bottom: 4px;
+		border-bottom: 2px solid transparent;
 		transition: color 0.3s;
 		position: relative;
 
 		&:hover {
-			border-bottom: 2px solid $accent-color;
+			border-bottom-color: $accent-color;
 		}
-	}
 
-	&__link--active {
-		color: orange;
+		&--active {
+			color: orange;
+		}
 	}
 }
 
@@ -66,15 +67,13 @@
 	display: block;
 }
 
-
 .buttons {
 	display: flex;
 	align-items: center;
-}
 
-.buttons {
 	&__link {
 		position: relative;
+		margin-top: 9px;
 	}
 
 	&__num {
@@ -88,7 +87,6 @@
 		font-size: 9px;
 		text-align: center;
 		color: black;
-		line-height: 19px;
 	}
 
 	&__block {
@@ -96,9 +94,8 @@
 		justify-content: space-between;
 		align-items: center;
 		width: 180px;
-		height: 50px;
 		margin: 0 20px;
-		padding: 0 30px;
+		padding: 10px 37px 10px 47px;
 		border-radius: 30px;
 		background-color: $main-color;
 	}
@@ -107,10 +104,10 @@
 		border-left: 1px solid #ffffff;
 		height: 30px;
 	}
-
 }
 
 .search {
+	cursor: pointer;
 
 	&__form {
 		display: none;
@@ -123,13 +120,13 @@
 	background-color: #edf1f4;
 	border: none;
 	border-radius: 50%;
+	padding-top: 5px;
+	cursor: pointer;
 }
 
 .all {
 	background-color: #a3bbc8;
-	padding-top: 5px;
 }
-
 
 .top-slider {
 
@@ -141,10 +138,9 @@
 		max-width: 470px;
 		@extend %rubik-500;
 		font-size: 72px;
-		line-height: 75px;
+		line-height: 1;
 		color: $title-color;
 		margin-bottom: 25px;
-
 	}
 
 	&__text {
@@ -185,6 +181,10 @@
 	li {
 		margin-left: 11px;
 
+		&:first-child {
+			margin-left: 0;
+		}
+
 		button {
 			padding: 0;
 			background-color: #ffffff;
@@ -203,82 +203,81 @@
 			}
 		}
 	}
-
-	li:first-child {
-		margin-left: 0;
-	}
 }
-
 
 .info {
 	background-color: #fef7f0;
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
-	// padding: 45px 150px 45px 0;
-	
+
+	&__text {
+		@extend %dmsans-400;
+		max-width: 200px;
+	}
 
 	&__item {
-		width: 300px;
-		// height: 170px;
 		padding-left: 75px;
+		padding-right: 145px;
+		padding-bottom: 45px;
+		padding-top: 50px;
+		margin-left: 114px;
+		background-repeat: no-repeat;
+		background-position: left center;
 		position: relative;
+
 		&:not(:last-child)::after {
 			content: '';
 			display: inline-block;
 			position: absolute;
+			padding-top: 50px;
 			top: 0;
 			bottom: 0;
 			right: 0;
 			width: 1px;
 			height: 100%;
-			background-color: red;
+			background-color: #e8e4df;
 		}
-	}
 
+		&--support {
+			background-image: url(../images/support.svg);
+		}
 
-	&__item::before {
-		content: '';
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 50px;
-		height: 50px;
-	}
+		&--delivery {
+			background-image: url(../images/delivery.svg);
+		}
 
-	&__item--support {
-		background-image: url(../images/support.svg);
-		background-repeat: no-repeat;
-	}
+		&--payment {
+			background-image: url(../images/credit.svg);
+		}
 
-	&__item--delivery {
-		background-image: url(../images/delivery.svg);
-		background-repeat: no-repeat;
-	}
-
-	&__item--payment {
-		background-image: url(../images/credit.svg);
-		background-repeat: no-repeat;
-	}
-
-	&__item-title {
-		@extend %dmsans-700;
-		color: #414141;
-	}
-
-	&__item-text {
-		@extend %dmsans-400;
+		&-title {
+			@extend %dmsans-700;
+			color: #414141;
+		}
 	}
 }
 
+.title {
+	text-align: center;
+	margin: 75px 0 17px;
+	color: #191919;
+	@extend %dmsans-700;
+	font-size: 36px;
+}
+
+.mixitup-control-active {
+	color: #191919;
+}
 
 .poducts {
-	&__title {
-		text-align: center;
-		margin: 75px 0 17px;
-		color: #191919;
-		@extend %dmsans-700;
-		font-size: 36px;
+
+	&__content {
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		margin-top: 80px;
+		margin-left: -60px;
 	}
 
 	&__filter-btn {
@@ -286,30 +285,8 @@
 	}
 
 	&__btn {
-		background-color: transparent;
-		padding: 0;
-		border: none;
-		@extend %dmsans-700;
-		color: #8b8b8b;
-		margin-right: 20px;
-		outline: transparent;
+		@extend %filter__btn;
 	}
-
-}
-
-.mixitup-control-active {
-	color: #191919;
-}
-
-.poducts__content {
-	display: flex;
-	justify-content: center;
-	flex-wrap: wrap;
-	margin-top: 80px;
-	margin-left: -60px;
-}
-
-.poducts {
 
 	&__item {
 		display: flex;
@@ -337,7 +314,6 @@
 		margin-top: 15px;
 		color: $subtitle;
 	}
-
 }
 
 .lamps {
@@ -368,7 +344,6 @@
 	&__title {
 		@extend %dmsans-700;
 		font-size: 26px;
-		line-height: 32px;
 		margin-bottom: 30px;
 	}
 
@@ -398,30 +373,61 @@
 	}
 }
 
-.footer {
-	@extend %rubik-400;
-	line-height: 24px;
-	font-size: 14px;
-	color: #7b7b7b;
+.design {
+	&__btn {
+		@extend %filter__btn;
+	}
+
+	&__filter-btn {
+		text-align: center;
+	}
+
+	&__cards {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: 260px 260px;
+		grid-gap: 30px;
+		margin-top: 80px;
+	}
+
+	&__card {
+		padding: 25px 0 0 40px;
+		@extend %dmsans-700;
+		font-size: 20px;
+		color: #191919;
+		background-repeat: no-repeat;
+
+		&-title {
+			max-width: 180px;
+		}
+	}
+
+	&__subtitle {
+		display: block;
+		font-size: 16px;
+		color: #a3bbc8;
+		margin-top: 10px;
+	}
 }
 
 .footer {
-	padding: 80px 0 75px;
+	@extend %rubik-400;
+	font-size: 14px;
+	color: #7b7b7b;
 	border-bottom: 1px solid #dae4e9;
+	padding-bottom: 35px;
+	margin-top: 80px;
 
 	&__inner {
 		display: flex;
 		justify-content: space-between;
+		margin-bottom: 85px;
 	}
 
-	&__nav {
-		width: 200px;
-
+	&__address {
+		font-style: normal;
 	}
 
-	&__form {
-		max-width: 290px;
-	}
 
 	&__logo {
 		margin-bottom: 25px;
@@ -431,20 +437,22 @@
 	&__contact {
 		display: block;
 		color: #7b7b7b;
-		margin-bottom: 20px;
 		width: 215px;
+
+		&:not(:first-child) {
+			margin-top: 20px;
+		}
 	}
 
 	&__title {
 		margin: 15px 0 25px;
-		line-height: 16px;
 		@extend %rubik-600;
 		color: #1f2044;
 		text-transform: uppercase;
 	}
 
 	&__item {
-		margin-bottom: 20px;
+		margin-bottom: 10px;
 	}
 
 	&__link {
@@ -481,25 +489,35 @@
 		justify-content: space-between;
 	}
 
-	&__list-item+.footer__list-item {
-		padding-left: 15px;
-		border-left: 2px solid #7b7b7b;
-	}
-
 	&__list-item {
 		padding-right: 15px;
 		color: #7b7b7b;
-		line-height: 18px;
+
+		&:not(:first-child) {
+			padding-left: 15px;
+			border-left: 2px solid #7b7b7b;
+		}
 	}
 
 	&__list-link {
 		color: #7b7b7b;
-
 	}
 
 	&__menu {
 		display: flex;
 	}
+}
+
+.subscribe {
+	max-width: 290px;
+}
+
+.services {
+	width: 200px;
+}
+
+.account {
+	width: 200px;
 }
 
 

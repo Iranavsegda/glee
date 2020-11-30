@@ -5,35 +5,45 @@ $link-color: #436372;
 $main-color: #fcd7b6;
 $subtitle: #a3bbc8;
 
-%dmsans-400{
+%dmsans-400 {
 	font-family: 'DMSans-Regular', sans-serif;
 	font-weight: 400;
 }
 
-%dmsans-700{
+%dmsans-700 {
 	font-family: 'DMSans-Bold', sans-serif;
 	font-weight: 700;
 }
 
-%rubik-400{
+%rubik-400 {
 	font-family: 'Rubik-Regular', sans-serif;
 	font-weight: 400;
 }
 
-%rubik-500{
+%rubik-500 {
 	font-family: 'Rubik-Medium', sans-serif;
 	font-weight: 500;
 }
 
-%rubik-600{
+%rubik-600 {
 	font-family: 'Rubik-SemiBold', sans-serif;
 	font-weight: 600;
 }
 
-%btn{
+%btn {
 	background-color: #a3bbc8;
 	text-transform: initial;
 	color: #ffffff;
 	padding: 25px 100px 25px 25px;
 	line-height: 12px;
+}
+
+%filter__btn {
+	background-color: transparent;
+		padding: 0;
+		border: none;
+		@extend %dmsans-700;
+		color: #8b8b8b;
+		margin-right: 20px;
+		outline: transparent;
 }

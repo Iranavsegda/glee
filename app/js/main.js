@@ -10,6 +10,8 @@ $(function(){
 
 	var mixer = mixitup('.poducts__content');
 
+	var mixer = mixitup('.design__cards');
+
 
 
 
