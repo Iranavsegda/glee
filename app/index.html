@@ -5,75 +5,87 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/style.min.css">
-	<title>Document</title>
+	<title>Glee | Home </title>
 </head>
 
 <body>
 	<header class="header">
-		<div class="container">
+		<div class="container container--big">
 			<div class="header__inner">
-				<a class="logo" href="#">
+				<a class="logo">
 					<img class="logo__img" src="images/logo.png" alt="logo">
 				</a>
 
 				<nav class="menu">
 					<ul class="menu__list">
-						<li class="menu__list-item">
-							<a class="menu__list-link menu__list-link--active" href="#">Home</a>
+						<li class="menu__item">
+							<a class="menu__link menu__link--active submenu" href="#">Home</a>
+							<ul class="submenu__list">
+								<li class="submenu__item"> <a href="#"></a> item 1 </li>
+								<li class="submenu__item"> <a href="#"></a> item 2 </li>
+							</ul>
 						</li>
-						<li class="menu__list-item">
-							<a class="menu__list-link" href="#">About</a>
+						<li class="menu__item">
+							<a class="menu__link" href="#">About</a>
 						</li>
-						<li class="menu__list-item">
-							<a class="menu__list-link" href="#">Services</a>
+						<li class="menu__item">
+							<a class="menu__link" href="#">Services</a>
 						</li>
-						<li class="menu__list-item">
-							<a class="menu__list-link" href="#">Pages</a>
+						<li class="menu__item">
+							<a class="menu__link submenu" href="#">Pages</a>
+							<ul class="submenu__list">
+								<li class="submenu__item"> <a href="#"></a> item 1 </li>
+								<li class="submenu__item"> <a href="#"></a> item 2 </li>
+							</ul>
 						</li>
-						<li class="menu__list-item">
-							<a class="menu__list-link" href="#">News</a>
+						<li class="menu__item">
+							<a class="menu__link" href="#">News</a>
 						</li>
-						<li class="menu__list-item">
-							<a class="menu__list-link" href="#">Contact</a>
+						<li class="menu__item">
+							<a class="menu__link" href="#">Contact</a>
 						</li>
 					</ul>
 				</nav>
 
-				<div class="user-nav">
-					<a class="user-nav__link user-nav__search" href="#">
+				<div class="buttons">
 
-					</a>
+					<form class="search">
+						<input class="search__form" type="text" placeholder="Искать здесь...">
+						<button class="btn" type="submit">
+							<svg xmlns="http://www.w3.org/2000/svg" width="15.28" height="15.281"><path d="M2.98 6.076a.617.617 0 01.75.485 2.583 2.583 0 00.78 1.489A3.036 3.036 0 006 8.827a.636.636 0 01.49.743.649.649 0 01-.72.515 4.21 4.21 0 01-2.14-1.13A4.164 4.164 0 012.5 6.819a.6.6 0 01.48-.743zM6.26 0a6.267 6.267 0 016.28 6.257 6.136 6.136 0 01-.57 2.6l2.34 2.036c1.7 1.746.74 3.266.29 3.717-.42.454-1.99 1.414-3.73-.292l-2.06-2.35A6.261 6.261 0 116.26 0zm5.55 13.517a1.352 1.352 0 001.88.226 1.313 1.313 0 00-.23-1.874l-2.16-1.88a6.236 6.236 0 01-1.37 1.34zm-5.55-2.312a4.948 4.948 0 10-4.97-4.948A4.963 4.963 0 006.26 11.2z" fill="#243f4d" fill-rule="evenodd"/></svg>
+						</button>
+					</form>
 
-					<div class="user-nav__block">
-						<a class="user-nav__link" href="#">
-							<img class="user-nav__link-img user-nav__heart" src="images/heart.svg" alt="heart btn">
-							<span class="user-nav__num">0</span>
+					<div class="buttons__block">
+						<a class="buttons__link" href="#">
+							<img class="buttons__link-img heart" src="images/heart.svg" alt="heart btn">
+							<span class="buttons__num">0</span>
 						</a>
-						<span class="user-nav__line"></span>
-						<a class="user-nav__link" href="#">
-							<img class="user-nav__link-img user-nav__basket" src="images/basket.svg" alt="basket btn">
-							<span class="user-nav__num">0</span>
+						<span class="buttons__line"></span>
+						<a class="buttons__link" href="#">
+							<img class="buttons__link-img user-nav__basket" src="images/basket.svg" alt="basket btn">
+							<span class="buttons__num">0</span>
 						</a>
 					</div>
 
-					<a class="user-nav__link user-nav__all" href="#">
+					<button class="btn all" type="submit">
+						<svg xmlns="http://www.w3.org/2000/svg" width="20.03" height="20.031"><path d="M2.15 4.287a2.146 2.146 0 112.14-2.145 2.145 2.145 0 01-2.14 2.145zm0 7.869a2.146 2.146 0 112.14-2.147 2.146 2.146 0 01-2.14 2.147zm0 7.868a2.146 2.146 0 112.14-2.146 2.145 2.145 0 01-2.14 2.146zm7.86-15.737a2.146 2.146 0 112.15-2.145 2.143 2.143 0 01-2.15 2.145zm0 7.869a2.146 2.146 0 112.15-2.147 2.144 2.144 0 01-2.15 2.147zm0 7.868a2.146 2.146 0 112.15-2.146 2.143 2.143 0 01-2.15 2.146zm7.87-15.737a2.146 2.146 0 112.15-2.145 2.143 2.143 0 01-2.15 2.145zm0 7.869a2.146 2.146 0 112.15-2.147 2.144 2.144 0 01-2.15 2.147zm0 7.868a2.146 2.146 0 112.15-2.146 2.143 2.143 0 01-2.15 2.146z" fill="#fff" fill-rule="evenodd"/></svg>
+					</button>
 
-					</a>
+					
 				</div>
-
-
 			</div>
 		</div>
 
 	</header>
 	<main class="main">
 		<section class="top-slider">
-			<div class="container">
+			<div class="container container--big">
 				<div class="top-slider__inner">
 
 					<div class="top-slider__item">
 						<div class="top-slider__wrapper">
-							<div class="top-slider__content">
+							<div class="top-slider__content" style="background-image: url(images/slider/slid1.jpg);">
 								<div class="top-slider__title">
 									SMART AND TRENDY
 								</div>
@@ -82,13 +94,12 @@
 								</p>
 								<a class="top-slider__link" href="#">Shop Now</a>
 							</div>
-							<img class="top-slider__img" src="images/slider/photo.png" alt="slide images">
 						</div>
 					</div>
 
 					<div class="top-slider__item">
 						<div class="top-slider__wrapper">
-							<div class="top-slider__content">
+							<div class="top-slider__content" style="background-image: url(images/slider/slid2.jpg);">
 								<div class="top-slider__title">
 									SMART AND TRENDY
 								</div>
@@ -97,13 +108,12 @@
 								</p>
 								<a class="top-slider__link" href="#">Shop Now</a>
 							</div>
-							<img class="top-slider__img" src="images/slider/photo.png" alt="slide images">
 						</div>
 					</div>
 
 					<div class="top-slider__item">
 						<div class="top-slider__wrapper">
-							<div class="top-slider__content">
+							<div class="top-slider__content" style="background-image: url(images/slider/slid3.jpg);">
 								<div class="top-slider__title">
 									SMART AND TRENDY
 								</div>
@@ -112,7 +122,6 @@
 								</p>
 								<a class="top-slider__link" href="#">Shop Now</a>
 							</div>
-							<img class="top-slider__img" src="images/slider/photo.png" alt="slide images">
 						</div>
 					</div>
 
@@ -121,76 +130,198 @@
 
 		</section>
 
+		<section class="poducts">
+			<div class="container container--big">
+				<div class="info">
+
+					<div class="info__item info__item--support">
+						<div class="info__item-title">Support 24/7.</div>
+						<div class="info__text">Contact us 24 hours a day,
+							7 days a week.</div>
+					</div>
+
+					<div class="info__item info__item--delivery">
+						<div class="info__item-title">Delivery.</div>
+						<div class="info__text">Free shipping on all US order.</div>
+					</div>
+
+					<div class="info__item info__item--payment">
+						<div class="info__item-title">100% Payment secure.</div>
+						<div class="info__text">We ensure secure payment
+							with PE</div>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+
+				<div class="poducts__title">Products of the week
+				</div>
+				<div class="poducts__filter-btn">
+					<button class="poducts__btn" data-filter="all">All</button>
+					<button class="poducts__btn" data-filter=".category-a">Furnitures </button>
+					<button class="poducts__btn" data-filter=".category-b">Chairs</button>
+					<button class="poducts__btn" data-filter=".category-c">Lighting</button>
+					<button class="poducts__btn" data-filter=".category-d">Decor</button>
+				</div>
+				<div class="poducts__content">
+					<div class="poducts__item mix category-a">
+						<img class="poducts__img" src="images/products/1.jpg" alt="#">
+						<div class="poducts__type">Wooden radio</div>
+						<div class="poducts__price">$29</div>
+					</div>
+					<div class="poducts__item mix category-a">
+						<img class="poducts__img" src="images/products/2.jpg" alt="#">
+						<div class="poducts__type">Wooden radio</div>
+						<div class="poducts__price">$29</div>
+
+					</div>
+					<div class="poducts__item mix category-b">
+						<img class="poducts__img" src="images/products/3.jpg" alt="#">
+						<div class="poducts__type">Wooden radio</div>
+						<div class="poducts__price">$29</div>
+					</div>
+					<div class="poducts__item mix category-b">
+						<img class="poducts__img" src="images/products/4.jpg" alt="#">
+						<div class="poducts__type">Wooden radio</div>
+						<div class="poducts__price">$29</div>
+					</div>
+					<div class="poducts__item mix category-c">
+						<img class="poducts__img" src="images/products/5.jpg" alt="#">
+						<div class="poducts__type">Wooden radio</div>
+						<div class="poducts__price">$29</div>
+					</div>
+					<div class="poducts__item mix category-c">
+						<img class="poducts__img" src="images/products/6.jpg" alt="#">
+						<div class="poducts__type">Wooden radio</div>
+						<div class="poducts__price">$29</div>
+
+					</div>
+					<div class="poducts__item mix category-d">
+						<img class="poducts__img" src="images/products/7.jpg" alt="#">
+						<div class="poducts__type">Wooden radio</div>
+						<div class="poducts__price">$29</div>
+					</div>
+					<div class="poducts__item mix category-d">
+						<img class="poducts__img" src="images/products/8.jpg" alt="#">
+						<div class="poducts__type">Wooden radio</div>
+						<div class="poducts__price">$29</div>
+					</div>
+				</div>
+			</div>
+
+
+		</section>
+		<section class="lamps">
+
+			<div class="container container--big">
+				<div class="lamps__items">
+					<div class="lamps__item">
+						<img class="lamps__img" src="images/lamp1.png" alt="lamp">
+						<div class="lamps__descr">
+							<div class="lamps__title">Mirum Notare Tellus</div>
+							<p class="lamps__text">LEDCornBulb Lamp 5W 7W 10W 12W 15W E26 E27LEDCornLight</p>
+							<a class="lamps__link" href="#">View more</a>
+						</div>
+					</div>
+
+					<div class="lamps__item">
+						<img class="lamps__img" src="images/lamp2.png" alt="lamp">
+						<div class="lamps__descr">
+							<div class="lamps__title">Malesuada Tempor
+								Euismod</div>
+							<p class="lamps__text">50W 8000lm Compact Size for HID StreetLightReplacementLEDCornLight</p>
+							<a class="lamps__link" href="#">View more</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</section>
+
 	</main>
+
+
 
 	<footer class="footer">
 		<div class="container">
-			<div class="footer-top">
-				<div class="footer-top__item footer-top__contact">
-					<a class="logo footer-top__logo" href="#">
+
+			<div class="footer__inner">
+
+
+				<div class="footer__item footer__contact">
+					<a class="logo footer__logo" href="#">
 						<img class="logo__img" src="images/logo.png" alt="logo">
 					</a>
-					<a class="footer-top__adress" href="#">
-						ADDRESS: 4772 Wines Lane
-						Houston, TX 77032
-					</a>
-					<a class="footer-top__phone" href="tel:+8323475843">Telephone: +832-347-5843</a>
-					<a class="footer-top__email" href="mailto:contact@Glee.com">Email: contact@Glee.com</a>
+					<address class="footer__contact">
+						<p>ADDRESS: 4772 Wines Lane
+							Houston, TX 77032</p>
+
+						<a class="footer__contact" href="tel:+8323475843">Telephone: +832-347-5843</a>
+						<a class="footer__contact" href="mailto:contact@Glee.com">Email: contact@Glee.com</a>
+					</address>
+
 				</div>
-				<div class="footer-top__item footer-top__nav">
-					<div class="footer-top__title">Services</div>
-					<ul class="footer-top_list">
-						<li class="footer-top__item"><a class="footer-top__link" href="#">About us</a></li>
-						<li class="footer-top__item"><a class="footer-top__link" href="#">Return Policy</a></li>
-						<li class="footer-top__item"><a class="footer-top__link" href="#">Our Blog</a></li>
-						<li class="footer-top__item"><a class="footer-top__link" href="#">Contact Us</a></li>
-						<li class="footer-top__item"><a class="footer-top__link" href="#">Terms & Condition</a></li>
+
+				<div class="footer__item footer__nav">
+					<div class="footer__title">Services</div>
+					<ul class="footer__list">
+						<li class="footer__item"><a class="footer__link" href="#">About us</a></li>
+						<li class="footer__item"><a class="footer__link" href="#">Return Policy</a></li>
+						<li class="footer__item"><a class="footer__link" href="#">Our Blog</a></li>
+						<li class="footer__item"><a class="footer__link" href="#">Contact Us</a></li>
+						<li class="footer__item"><a class="footer__link" href="#">Terms & Condition</a></li>
 					</ul>
 				</div>
-				<div class="footer-top__item footer-top__nav">
-					<div class="footer-top__title">Account</div>
-					<ul class="footer-top_list">
-						<li class="footer-top__item"><a class="footer-top__link" href="#">Your Account</a></li>
-						<li class="footer-top__item"><a class="footer-top__link" href="#">Checkout</a></li>
-						<li class="footer-top__item"><a class="footer-top__link" href="#">Login</a></li>
-						<li class="footer-top__item"><a class="footer-top__link" href="#">Register</a></li>
+
+				<div class="footer__item footer__nav">
+					<div class="footer__title">Account</div>
+					<ul class="footer__list">
+						<li class="footer__item"><a class="footer__link" href="#">Your Account</a></li>
+						<li class="footer__item"><a class="footer__link" href="#">Checkout</a></li>
+						<li class="footer__item"><a class="footer__link" href="#">Login</a></li>
+						<li class="footer__item"><a class="footer__link" href="#">Register</a></li>
 					</ul>
 				</div>
-				<div class="footer-top__item footer-top__item-form">
-					<div class="footer-top__title">newsletter</div>
-					<p class="footer-top__text">Subscribe by our newsletter and get
+
+				<div class="footer__item footer__form">
+					<div class="footer__title">newsletter</div>
+					<p class="footer__text">Subscribe by our newsletter and get
 						update protidin.</p>
-					<form action="#" class="footer-top__form">
-						<input class="footer-top__form-input" type="email" placeholder="Email address" required>
-						<button class="footer-top__form-btn" type="submit">Subscribe</button>
+					<form action="#" class="footer__form">
+						<label for="input"></label>
+						<input id="input" class="footer__form-input" type="email" placeholder="Email address" required>
+						<button class="footer__form-btn" type="submit">Subscribe</button>
 					</form>
 				</div>
-			</div>
-			<!-- footer-top -->
-			<div class="footer-bottom">
-				<p class="footer-bottom__copy">
-					©2020 CopyRight Example. All rights reserved.
-				</p>
-				<nav class="footer-bottom__nav">
-					<ul class="footer-bottom__list">
-						<li class="footer-bottom__list-item">
-							<a class="footer-bottom__list-link" href="#">Home</a>
-						</li>
-						<li class="footer-bottom__list-item">
-							<a class="footer-bottom__list-link" href="#">About</a>
-						</li>
-						<li class="footer-bottom__list-item">
-							<a class="footer-bottom__list-link" href="#">Blog</a>
-						</li>
-						<li class="footer-bottom__list-item">
-							<a class="footer-bottom__list-link" href="#">Contact</a>
-						</li>
-					</ul>
-				</nav>
 
 			</div>
-		</div>
+
+			<div class="footer__wrapper">
+				<p class="footer__copy">
+					©2020 CopyRight Example. All rights reserved.
+				</p>
+				
+					<ul class="footer__menu">
+						<li class="footer__list-item">
+							<a class="footer__list-link" href="#">Home</a>
+						</li>
+						<li class="footer__list-item">
+							<a class="footer__list-link" href="#">About</a>
+						</li>
+						<li class="footer__list-item">
+							<a class="footer__list-link" href="#">Blog</a>
+						</li>
+						<li class="footer__list-item">
+							<a class="footer__list-link" href="#">Contact</a>
+						</li>
+					</ul>
+				</div>
+
+			</div>
+		
 	</footer>
+
+	<script src="js/mixitup.min.js"></script>
 
 	<script src="js/main.min.js"></script>
 

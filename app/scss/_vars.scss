@@ -3,6 +3,7 @@ $default-color:#585858;
 $title-color: #243f4d;
 $link-color: #436372;
 $main-color: #fcd7b6;
+$subtitle: #a3bbc8;
 
 %dmsans-400{
 	font-family: 'DMSans-Regular', sans-serif;
@@ -34,4 +35,5 @@ $main-color: #fcd7b6;
 	text-transform: initial;
 	color: #ffffff;
 	padding: 25px 100px 25px 25px;
+	line-height: 12px;
 }
