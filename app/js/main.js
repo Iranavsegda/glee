@@ -12,8 +12,5 @@ $(function(){
 
 	var mixer = mixitup('.design__cards');
 
-
-
-
 	
 })
