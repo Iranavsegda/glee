@@ -1,0 +1,116 @@
+
+.footer {
+	@extend %rubik-400;
+	font-size: 14px;
+	color: #7b7b7b;
+	border-bottom: 1px solid #dae4e9;
+	padding-bottom: 35px;
+	margin-top: 350px;
+
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 85px;
+	}
+
+	&__address {
+		font-style: normal;
+	}
+
+	&__logo {
+		margin-bottom: 25px;
+		display: block;
+	}
+
+	&__contact {
+		display: block;
+		color: #7b7b7b;
+		width: 215px;
+
+		&:not(:first-child) {
+			margin-top: 20px;
+		}
+	}
+
+	&__title {
+		margin: 15px 0 25px;
+		@extend %rubik-600;
+		color: #1f2044;
+		text-transform: uppercase;
+	}
+
+	&__item {
+		margin-bottom: 10px;
+
+	}
+
+	&__link {
+		color: #7b7b7b;
+	}
+
+	&__text {
+		margin-bottom: 40px;
+	}
+
+	&__input {
+		font-size: 12px;
+		max-width: 170px;
+		width: 100%;
+		background-color: #fef7f0;
+		color: #234969;
+		border: none;
+		padding: 12px 10px 12px 15px;
+		outline: transparent;
+
+		&::placeholder {
+			@extend %dmsans-400;
+			color: #234969;
+			font-size: 12px;
+		}
+	}
+
+	&__btn {
+		@extend %dmsans-400;
+		font-size: 14px;
+		background-color: #a3bbc8;
+		color: #fff;
+		border: none;
+		padding: 10px 25px;
+		cursor: pointer;
+	}
+
+	&__wrapper {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__list-item {
+		padding-right: 15px;
+		color: #7b7b7b;
+
+		&:not(:first-child) {
+			padding-left: 15px;
+			border-left: 2px solid #7b7b7b;
+		}
+	}
+
+	&__list-link {
+		color: #7b7b7b;
+	}
+
+	&__menu {
+		display: flex;
+	}
+
+	&--subscribe {
+		max-width: 290px;
+	}
+	
+	&--services {
+		width: 200px;
+	}
+	
+	&--account {
+		width: 200px;
+	}
+}

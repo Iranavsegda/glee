@@ -31,23 +31,6 @@ $subtitle: #a3bbc8;
 	font-weight: 600;
 }
 
-%btn {
-	background-color: #a3bbc8;
-	text-transform: initial;
-	color: #ffffff;
-	padding: 25px 100px 25px 25px;
-	line-height: 12px;
-}
-
-%filter__btn {
-	background-color: transparent;
-		padding: 0;
-		border: none;
-		@extend %dmsans-700;
-		color: #8b8b8b;
-		margin-right: 20px;
-		outline: transparent;
-}
 
 
 @function max($numbers...) {

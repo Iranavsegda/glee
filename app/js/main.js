@@ -5,10 +5,11 @@ $(function(){
 	arrows: false,
 	fade: true,
 	autoplay: true,
-	autoplaySpeed: 2000
+	autoplaySpeed: 2000,
+	dotsClass: 'home-dots',
 	})
 
-	var mixer = mixitup('.poducts__content');
+	var mixer = mixitup('.products__content');
 
 	var mixer = mixitup('.design__cards');
 

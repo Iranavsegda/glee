@@ -1,0 +1,42 @@
+.design {
+	
+	&__filter-btn {
+		text-align: center;
+	}
+
+	&__cards {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: 260px 260px;
+		grid-gap: 30px;
+		margin-top: 80px;
+	}
+
+	&__card {
+		@extend %dmsans-700;
+		font-size: 20px;
+		color: #191919;
+		background-repeat: no-repeat;
+		transition: 0.8s;
+		position: relative;
+
+		&:hover {
+			transform: scale(1.1);
+			transition: 0.8s;
+		}
+
+		&-title {
+			position: absolute;
+			top: 25px;
+			left: 40px;
+			max-width: 180px;
+		}
+	}
+
+	&__subtitle {
+		display: block;
+		font-size: 16px;
+		color: #a3bbc8;
+		margin-top: 10px;
+	}
+}

@@ -26,3 +26,24 @@ body {
 		max-width: 1800px;
 	}
 }
+
+.title {
+	text-align: center;
+	margin: 75px 0 17px;
+	color: #191919;
+	@extend %dmsans-700;
+	font-size: 36px;
+}
+
+label {
+	display: none;
+}
+
+
+.btn {
+	background-color: #a3bbc8;
+	text-transform: initial;
+	color: #ffffff;
+	padding: 25px 100px 25px 25px;
+	line-height: 12px;
+}
